@@ -1,7 +1,5 @@
 .env
 output/
-data/ingested.txt
-data/summary.txt
-data/prioritized.txt
+data/
 __pycache__/
 *.pyc

@@ -26,7 +26,14 @@ A multi-agent AI system that turns raw text files into an organized daily digest
    ```
    OPENAI_API_KEY=sk-your-key-here
    ```
-4. Add your raw text files to `data/input/`
+4. Add your raw text files to `data/input/` (create the directory if needed):
+   ```bash
+   mkdir -p data/input
+   ```
+   Sample files are provided in `tests/fixtures/` to get started:
+   ```bash
+   cp tests/fixtures/*.txt data/input/
+   ```
 
 ## Run
 
