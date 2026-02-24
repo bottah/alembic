@@ -42,3 +42,4 @@ python -m pytest tests/ -v
 
 Agents communicate via a shared Docker volume (`/data`). Docker Compose enforces execution order using `depends_on: condition: service_completed_successfully`. Only the Summarizer calls an external API — all other agents are pure deterministic Python.
 
+Based on: [How to Build and Deploy a Multi-Agent AI System with Python and Docker](https://www.freecodecamp.org/news/build-and-deploy-multi-agent-ai-with-python-and-docker/) by Balajee Asish Brahmandam.
