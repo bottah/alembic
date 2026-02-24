@@ -48,7 +48,8 @@ Agents communicate exclusively via files on a shared Docker volume. No message q
 - Only the Summarizer calls an external API; all other agents are pure deterministic Python
 - Summarizer has retry logic (3 retries, exponential backoff) and a 512M memory limit
 - Prioritizer keywords: "urgent", "today", "asap", "important", "deadline", "critical", "action required" (case-insensitive)
-- Each agent has its own Dockerfile (Python 3.10-slim base)
+- Each agent has its own Dockerfile using Docker Hardened Images (`dhi.io/python:3.13-dev`)
+- DHI images require authentication: `docker login dhi.io` (uses Docker Hub credentials)
 - Agents run once and exit (no restart policy)
 
 ## Environment
